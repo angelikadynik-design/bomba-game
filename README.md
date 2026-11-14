@@ -1,41 +1,46 @@
-# Python GUI Homework Project
+# My Python Games and Apps
 
-A collection of three small, beginner-friendly desktop applications made with Python 3 and `tkinter`. The code uses only Python's standard library and includes short English comments where helpful.
+This project has three small apps. They are made with Python and tkinter. You do not need to install extra Python packages.
 
-## Project contents
+## 1. Bomb Clicker
 
-### `bomb_clicker/main.py` — Bomb Clicker
+Open the game and click the bomb 30 times before the 10-second timer ends. Click fast to win! The game shows how much time and how many clicks are left. Press **Restart** to play again.
 
-A timed click game. Click the bomb 30 times before the 10-second countdown ends to defuse it. The window shows the remaining time and clicks, displays **Bomb defused!** or **BOOM!**, and includes a Restart button.
-
-### `mage_diary/main.py` — Mage's Diary
-
-A spellbook-themed notes app with a list of note titles and an editor. Create, edit, save, and delete notes; add comma-separated tags and filter the list by tag. Notes are stored in `mage_diary/notes.json`, created next to the script when needed. Missing, empty, or invalid JSON files are handled without crashing.
-
-### `my_game/main.py` — Catch the Star
-
-A complete 30-second game with start, play, and game-over screens. Click the star as it moves around the canvas to score points. The target moves more quickly as your score increases. Your best score is stored in `my_game/best_score.json`; if the file is missing or unreadable, the game starts with a best score of zero.
-
-### Other files
-
-- `.gitignore` excludes Python cache files and generated game data files.
-- `README.md` explains the project, requirements, and how to launch each app.
-
-## Requirements
-
-- Python 3.10 or later
-- `tkinter` (included with many Python installations; no third-party packages are used)
-
-On some Linux distributions, tkinter is packaged separately from Python. If importing `tkinter` fails, install your distribution's standard `python3-tk` package.
-
-## Run an app
-
-Run a command from the repository's root directory:
+Run it with:
 
 ```bash
 python bomb_clicker/main.py
+```
+
+## 2. Mage's Diary
+
+This is a little wizard notebook. You can make notes, write their titles and text, and add tags such as `spell` or `potion`. Use the search box to find notes by tag. You can also save or delete notes.
+
+Your notes are saved in `mage_diary/notes.json`. The app can start even if this file is missing or empty.
+
+Run it with:
+
+```bash
 python mage_diary/main.py
+```
+
+## 3. Catch the Star
+
+Try to click the star as many times as you can before 30 seconds are over. The star moves to a new place after each click and gets faster as you score more points. The game shows your score and your best score.
+
+Your best score is saved in `my_game/best_score.json`. The app can start if this file is missing or empty.
+
+Run it with:
+
+```bash
 python my_game/main.py
 ```
 
-On systems where Python 3 is invoked as `python3`, replace `python` with `python3`.
+## What you need
+
+- Python 3.10 or newer
+- tkinter, which comes with many Python installations
+
+On some Linux computers, tkinter may need to be installed separately as `python3-tk`.
+
+If your computer uses `python3` instead of `python`, use `python3` in the commands above.
