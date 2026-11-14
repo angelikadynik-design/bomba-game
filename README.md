@@ -1,28 +1,41 @@
-# Homework project: simple Python GUI apps made with tkinter.
-# This repository contains three beginner-friendly assignments.
+# Python GUI Homework Project
 
-# Project overview
-# The project includes:
-# 1) Bomb Clicker game
-# 2) Mage's Diary notes app
-# 3) Catch the Star game
+A collection of three small, beginner-friendly desktop applications made with Python 3 and `tkinter`. The code uses only Python's standard library and includes short English comments where helpful.
 
-# Repository structure
-# - bomb_clicker/main.py
-# - mage_diary/main.py
-# - my_game/main.py
-# - README.md
-# - .gitignore
+## Project contents
 
-# How to run each app
-# python bomb_clicker/main.py
-# python mage_diary/main.py
-# python my_game/main.py
+### `bomb_clicker/main.py` — Bomb Clicker
 
-# Requirements
-# - Python 3.10+
-# - tkinter (built into Python on most systems)
+A timed click game. Click the bomb 30 times before the 10-second countdown ends to defuse it. The window shows the remaining time and clicks, displays **Bomb defused!** or **BOOM!**, and includes a Restart button.
 
-# Notes
-# These apps are designed for a beginner programming course.
-# They use only the standard library and keep the code simple and readable.
+### `mage_diary/main.py` — Mage's Diary
+
+A spellbook-themed notes app with a list of note titles and an editor. Create, edit, save, and delete notes; add comma-separated tags and filter the list by tag. Notes are stored in `mage_diary/notes.json`, created next to the script when needed. Missing, empty, or invalid JSON files are handled without crashing.
+
+### `my_game/main.py` — Catch the Star
+
+A complete 30-second game with start, play, and game-over screens. Click the star as it moves around the canvas to score points. The target moves more quickly as your score increases. Your best score is stored in `my_game/best_score.json`; if the file is missing or unreadable, the game starts with a best score of zero.
+
+### Other files
+
+- `.gitignore` excludes Python cache files and generated game data files.
+- `README.md` explains the project, requirements, and how to launch each app.
+
+## Requirements
+
+- Python 3.10 or later
+- `tkinter` (included with many Python installations; no third-party packages are used)
+
+On some Linux distributions, tkinter is packaged separately from Python. If importing `tkinter` fails, install your distribution's standard `python3-tk` package.
+
+## Run an app
+
+Run a command from the repository's root directory:
+
+```bash
+python bomb_clicker/main.py
+python mage_diary/main.py
+python my_game/main.py
+```
+
+On systems where Python 3 is invoked as `python3`, replace `python` with `python3`.
