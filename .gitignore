@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated JSON data files used by the apps.
+# The apps create these automatically if they are missing.
+**/notes.json
+**/best_score.json
